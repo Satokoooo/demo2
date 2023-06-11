@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: #262626;
+    font-family: "MS Pゴシック", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----------layout---------------- */
+
+.l-header {
+    background-color: rgba(255, 255, 255, .8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.l-header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-header__imgWrap img {
+    object-fit: contain;
+    height: 100%;
+}
+
+.l-header__nav {
+    width: 60%;
+}
+
+.l-header__navList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-header__navItem a {
+    font-size: 1.6rem;
+    color: #262626;
+    font-weight: 700;
+}
+
+.l-header__navItem a:hover {
+    color: #387DC1;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.l-footer__wrap {
+    background-color: #455262;
+}
+
+.l-footer__nav {
+    margin: 0 0 0 auto;
+}
+
+.l-footer__navItem a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.l-footer__navItem a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.l-footer__copyright {
+    color: #fff;
+    font-weight: 700;
+    text-align: right;
+}
+
+.l-backImg {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* -----------component---------------- */
+
+.c-button {
+    background-color: #387DC1;
+    font-weight: 700;
+    box-shadow: none;
+    border: 2px solid #387DC1;
+}
+
+.c-button a {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.c-button:hover {
+    background-color: #fff;
+    border: 2px solid #387DC1;
+    transition: 0.3s;
+}
+
+.c-button a:hover {
+    color: #387DC1;
+    transition: 0.3s;
+}
+
+.c-pageTitle {
+    font-weight: 700;
+    position: absolute;
+}
+
+/* -----------home_page---------------- */
+
+.p-homeHero {
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.p-homeHero__pageTitle {
+    font-size: 6rem;
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    bottom: 40%;
+}
+
+.p-homeIntroduction__imgWrap {
+    background-image: url("../img/introduction.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.p-homeIntroduction__title {
+    font-weight: 700;
+}
+
+.p-homeJob__wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-homeJob__title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-homeJob__listItem img {
+    object-fit: contain;
+}
+
+.p-homeJob__itemTitle {
+    font-weight: 700;
+}
+
+.p-homeJob__itemText {
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.p-homeCompany__title {
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.p-homeCompany__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-homeCompany__imgWrap {
+    width: 50%;
+}
+
+.p-homeCompany__textWrap {
+    width: 50%;
+    text-align: center;
+}
+
+.p-homeContact__title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-homeContact__container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.p-homeContact__contentWrap img{
+    height: auto;
+    vertical-align: middle;
+}
+
+.p-homeContact__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p-homeContact__text a {
+    color: #262626;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.p-homeContact__text a:hover {
+    color: #387DC1;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.p-homeContact__text span {
+    color: #262626;
+    font-size: 2.2rem;
+    margin-left: 5px;
+}
+
+/* -----------company_page---------------- */
+.company {
+    background-image: url(../img/company.png);
+}
+
+.p-company-contentTitle {
+    font-weight: 700;
+}
+
+.p-companyInformation__table tr :first-of-type {
+    border-top: 1px solid #D5D5D5;
+}
+
+.p-companyInformation__table tr {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.p-companyInformation__table th,
+.p-companyInformation__table td {
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.p-companyInformation__table th {
+    padding: 3%;
+    width: 20%;
+}
+
+.p-companyInformation__table td {
+    padding: 3% 3% 3% 8%;
+    width: 80%;
+}
+
+.p-companyAccess__mapWrap iframe {
+    width: 100%;
+}
+
+/* -----------business_page---------------- */
+.business {
+    background-image: url(../img/business.png);
+    margin-bottom: 0!important;
+}
+
+.p-business__contentTitle {
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-businessResume {
+    background-color: #FAFAFA;
+}
+
+.p-businessResume__item {
+    height: auto;
+    border: 1px solid #707070;
+}
+
+.p-businessResume__item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.p-businessResume__item:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.p-businessResume__itemTitle {
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-businessSoftware__text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-businessSoftware__imgWrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-businessStudyCase {
+    background-color: #FAFAFA;
+}
+
+.p-businessStusyCase__list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-businessStudyCase__itemTitle {
+    font-weight: 700;
+}
+
+.p-businessRecruit__text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-businessRecruit__table {
+    width: 60%;
+    margin-left: 10%;
+}
+
+.p-businessRecruit__table tr {
+    border: 1px solid #DFDFDF;
+}
+
+.p-businessRecruit__table th,
+.p-businessRecruit__table td {
+    padding: 3% 5%;
+}
+
+.p-businessRecruit__table th {
+    background-color: #EFF7FF;
+    border-right: 1px solid #DFDFDF;
+    width: 30%;
+}
+
+.p-businessRecruit__table td {
+    width: 70%;
+}
+
+.p-businessInfrastructure__text {
+    font-size: 1.8rem;
+    line-height: 2;
+    width: 50%;
+    margin: 0 auto;
+}
+/* -----------contact_page---------------- */
+.contact {
+    background-image: url(../img/contact.png);
+}
+
+.p-contact__text {
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-contact__content {
+    border: 1px solid #262626;
+    padding: 3% 5%;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.p-contact__contentTitle {
+    font-weight: 700;
+}
+
+.p-contact__content img {
+    height: auto;
+}
+
+.p-contact__contentInformation a {
+    font-weight: 700;
+    color: #262626;
+}
+
+.p-contact__contentInformation a:hover {
+    color: #387DC1;
+    text-decoration: underline;
+    transition: 0.3s;
+}
